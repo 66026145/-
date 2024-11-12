@@ -1,14 +1,14 @@
 import Link from "next/link"
-import profiledb from "./db"
+import newsdb from "./db"
 
-async function getAllProfile () {
-    return profiledb
+async function getAllNews () {
+    return newsdb
     
 }
 
-export default async function ProfilePage(){
+export default async function NewsPage(){
 
-    const new_list = await getAllProfile()
+    const new_list = await getAllNews()
 
     return (
         <>
